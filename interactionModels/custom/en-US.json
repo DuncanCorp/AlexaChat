@@ -1,0 +1,532 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "change me",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel this"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "SetFavoriteColorIntent",
+          "slots": [
+            {
+              "name": "color",
+              "type": "AMAZON.Color"
+            }
+          ],
+          "samples": [
+            "I love {color}",
+            "my favorite color is {color}"
+          ]
+        },
+        {
+          "name": "GetFavoriteColorIntent",
+          "slots": [],
+          "samples": [
+            "what is my favorite color"
+          ]
+        },
+        {
+          "name": "AMAZON.AddAction\u003cobject@Book,targetCollection@ReadingList\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.AddAction\u003cobject@BookSeries,targetCollection@ReadingList\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@Book,sourceCollection@ReadingList\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@Book\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeleteAction\u003cobject@Book,sourceCollection@ReadingList\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeleteAction\u003cobject@BookSeries,sourceCollection@ReadingList\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PlaybackAction\u003cobject@Book\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RateAction\u003cobject@Book\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ReadAction\u003cobject@Calendar\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@Calendar\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@ScreeningEvent[location]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@ScreeningEvent[workPresented]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@ScreeningEvent\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@LocalBusiness\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@LocalBusiness[openHours.closes]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@LocalBusiness[openHours]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@LocalBusiness[telephone]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.AddAction\u003cobject@MusicCreativeWork,targetCollection@MusicPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@MusicCreativeWork,sourceCollection@MusicPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@MusicCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@MusicPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CreateAction\u003cobject@MusicPlaylist,content@MusicCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CreateAction\u003cobject@MusicPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeleteAction\u003cobject@MusicCreativeWork,sourceCollection@MusicPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeleteAction\u003cobject@MusicCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeleteAction\u003cobject@MusicPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeleteAction\u003cobject@MusicPlaylist,sourceCollection@Catalog\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.LikeAction\u003cobject@Musician\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PlaybackAction\u003cobject@MusicCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PlaybackAction\u003cobject@MusicPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatAction\u003cobject@MusicCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeAction\u003cobject@MusicCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@MusicCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@MusicCreativeWork[byArtist]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@MusicGroup\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@MusicGroup[musicGroupMember]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@VideoCreativeWork,sourceCollection@VideoPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@VideoCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CloseAction\u003cobject@VideoCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DislikeAction\u003cobject@VideoCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ExitAction\u003cobject@VideoPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.LikeAction\u003cobject@VideoCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PlaybackAction\u003cobject@VideoCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RateAction\u003cobject@VideoCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RestartAction\u003cobject@VideoCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeAction\u003cobject@VideoCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@VideoCreativeWork,sourceCollection@VideoPlaylist\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@VideoCreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@VideoCreativeWork[actor]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@VideoCreativeWork[audience]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@VideoCreativeWork[contentRating]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@VideoCreativeWork[dateReleased]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@VideoCreativeWork[description]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@VideoCreativeWork[director]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@WeatherForecast\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@WeatherForecast[temperature]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@WeatherForecast[weatherCondition]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ActivateAction\u003cobject@PlaybackMode\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.AddAction\u003cobject@Event\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@CreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ChooseAction\u003cobject@Event\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CloseAction\u003cobject@CreativeWorkSection\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CloseAction\u003cobject@Thing\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CreateAction\u003cobject@ReadingList\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeactivateAction\u003cobject@PlaybackMode\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeactivateAction\u003cobject@Thing\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeleteAction\u003cobject@Event\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeleteAction\u003cobject@ReadingList\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.DeleteAction\u003cobject@Thing\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ExitAction\u003cobject@Episode\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.IgnoreAction\u003cobject@Thing\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.MuteAction\u003cobject@Thing\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PlaybackAction\u003cobject@CreativeWorkSection\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PlaybackAction\u003cobject@Episode\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PlaybackAction\u003cobject@TVSeason\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PlaybackAction\u003cobject@TVSeries\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ReplaceAction\u003cobject@Event\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RestartAction\u003cobject@CreativeWorkSection\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeAction\u003cobject@CreativeWorkSection\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeAction\u003cobject@TVSeries\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@Actor\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@CreativeWork\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@CreativeWork[name]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@CreativeWorkSection\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@CreativeWorkSection[name]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@Episode\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@Episode[description]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@Event\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@Event[eventStatus]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@Event[location]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@Event[startDate]\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SearchAction\u003cobject@Singer\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartAction\u003cobject@CreativeWorkSection\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SuspendAction\u003cobject@CreativeWorkSection\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SuspendAction\u003cobject@Episode\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.WatchAction\u003cobject@Episode\u003e",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.LoopOffIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.LoopOnIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SelectIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SendToPhoneIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ShuffleOffIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ShuffleOnIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "2"
+}
