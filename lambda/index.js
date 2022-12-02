@@ -47,6 +47,7 @@ const RecordColorApiHandler = {
     }
 }
 
+//Set the Alexa bot to Set the User Favorite Color
 const IntroToAlexaConversationsButtonEventHandler = {
     canHandle(handlerInput) {
         console.log(JSON.stringify(handlerInput.requestEnvelope));
@@ -131,6 +132,7 @@ const FallbackIntentHandler = {
             .getResponse();
     },
 };
+//Close the current session
 const SessionEndedRequestHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'SessionEndedRequest';
